@@ -1,27 +1,18 @@
 :root {
   color-scheme: light;
-  --coral: #e24f3e;
-  --cream: #ebe8dc;
-  --white: #fffdf9;
-  --blush: #f7cfd2;
-  --brown: #633721;
-  --ink: #4d3427;
-  --faint: #eee7dc;
-  --muted: #806b5e;
+  --coral: #de533c;
+  --blush: #fad4d6;
+  --cream: #ece8dc;
+  --pale: #d9d7c7;
+  --brown: #5d3827;
+  --ink: #3f3028;
+  --white-soft: #f5eee7;
 }
 
 @font-face {
   font-family: "PP Neue Montreal";
   src: url("assets/fonts/PPNeueMontreal-Book.otf") format("opentype");
   font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "PP Neue Montreal";
-  src: url("assets/fonts/PPNeueMontreal-Medium.otf") format("opentype");
-  font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
@@ -60,19 +51,10 @@ html {
 
 body {
   margin: 0;
+  overflow-x: hidden;
   background: var(--cream);
   color: var(--ink);
-  font-family: "PP Neue Montreal", Avenir, "Avenir Next", "Helvetica Neue", Arial, sans-serif;
-  line-height: 1.45;
-}
-
-body.menu-open {
-  overflow: hidden;
-}
-
-img {
-  display: block;
-  max-width: 100%;
+  font-family: "PP Neue Montreal", Avenir, "Helvetica Neue", Arial, sans-serif;
 }
 
 a {
@@ -80,437 +62,409 @@ a {
   text-decoration: none;
 }
 
-.site-header {
-  position: sticky;
-  top: 0;
-  z-index: 30;
-  display: grid;
-  grid-template-columns: 1fr auto;
-  align-items: center;
-  min-height: 88px;
-  padding: 0 clamp(22px, 5vw, 76px);
-  background: rgb(255 253 249 / 86%);
-  border-bottom: 1px solid rgb(99 55 33 / 7%);
-  backdrop-filter: blur(18px);
+img {
+  display: block;
+  max-width: 100%;
 }
 
-.logo {
-  color: var(--coral);
-  font-family: "Bigilla", Didot, "Bodoni 72", Georgia, serif;
-  font-size: clamp(1.6rem, 2.8vw, 2.8rem);
-  line-height: 1;
-}
-
-.site-nav {
-  display: flex;
-  gap: clamp(42px, 8vw, 150px);
-  color: var(--ink);
-  font-size: clamp(1rem, 1.5vw, 1.55rem);
-}
-
-.site-nav a {
-  transition: color 160ms ease;
-}
-
-.site-nav a:hover,
-.site-nav a:focus-visible {
-  color: var(--coral);
-}
-
-.menu-toggle {
-  display: none;
-  width: 46px;
-  height: 46px;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  gap: 6px;
-  padding: 0;
-  background: transparent;
-  border: 0;
-  cursor: pointer;
-}
-
-.menu-toggle span {
-  width: 28px;
-  height: 2px;
-  background: var(--coral);
-  transition: transform 180ms ease, opacity 180ms ease;
-}
-
-.menu-open .menu-toggle span:first-child {
-  transform: translateY(8px) rotate(45deg);
-}
-
-.menu-open .menu-toggle span:nth-child(2) {
-  opacity: 0;
-}
-
-.menu-open .menu-toggle span:last-child {
-  transform: translateY(-8px) rotate(-45deg);
+picture {
+  display: block;
 }
 
 .hero {
-  min-height: calc(100vh - 88px);
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(300px, 0.78fr);
-  background: var(--coral);
-}
-
-.hero-copy {
   position: relative;
-  min-height: 620px;
-  padding: clamp(28px, 6vw, 80px);
-  color: var(--faint);
+  height: 832px;
+  background: var(--coral);
+  color: var(--white-soft);
 }
 
-.hero-copy h1 {
+.hero-nav a {
   position: absolute;
-  left: clamp(34px, 10vw, 160px);
-  top: 38%;
+  z-index: 2;
+  color: rgb(245 238 231 / 72%);
+  font-size: 20px;
+  line-height: 1;
+}
+
+.nav-blog {
+  left: 70px;
+  top: 76px;
+}
+
+.nav-about {
+  left: 529px;
+  top: 76px;
+}
+
+.nav-gallery {
+  left: 70px;
+  top: 731px;
+}
+
+.nav-contact {
+  left: 506px;
+  top: 731px;
+}
+
+h1 {
+  position: absolute;
+  left: 173px;
+  top: 291px;
   margin: 0;
-  font-family: "Bigilla", Didot, "Bodoni 72", Georgia, serif;
-  font-size: clamp(4rem, 11vw, 11.5rem);
+  color: var(--white-soft);
+  font-family: "Bigilla", Didot, Georgia, serif;
+  font-size: 167px;
   font-weight: 400;
-  line-height: 0.78;
   letter-spacing: 0;
+  line-height: 0.66;
 }
 
-.hero-copy h1 span {
+h1 span {
   display: block;
-  margin-left: 0.18em;
-  font-family: "PP Neue Montreal", Avenir, "Avenir Next", "Helvetica Neue", Arial, sans-serif;
-  font-size: 0.28em;
-  font-weight: 300;
-  line-height: 1.1;
-}
-
-.nav-word {
-  position: absolute;
-  margin: 0;
-  color: rgb(255 253 249 / 78%);
-  font-size: clamp(0.9rem, 1.2vw, 1.3rem);
-}
-
-.top-left {
-  left: clamp(24px, 5vw, 72px);
-  top: clamp(26px, 6vw, 74px);
-}
-
-.top-right {
-  right: clamp(38px, 10vw, 170px);
-  top: clamp(26px, 6vw, 74px);
-}
-
-.bottom-left {
-  left: clamp(24px, 5vw, 72px);
-  bottom: clamp(36px, 10vw, 152px);
-}
-
-.bottom-right {
-  right: clamp(38px, 10vw, 170px);
-  bottom: clamp(36px, 10vw, 152px);
+  margin-left: 11px;
+  font-family: "PP Neue Montreal", Avenir, "Helvetica Neue", Arial, sans-serif;
+  font-size: 47px;
+  font-weight: 400;
+  line-height: 1;
 }
 
 .hero-art {
-  align-self: start;
-  justify-self: center;
-  width: min(82%, 520px);
-  margin: clamp(24px, 5vw, 54px) clamp(18px, 5vw, 54px) 0;
+  position: absolute;
+  left: 682px;
+  top: 42px;
+  width: 556px;
+  height: 639px;
 }
 
-.hero-art img {
-  border: 6px solid #732b22;
+.hero-art img,
+.slate-art img,
+.board-art img,
+.brown-art img,
+.gallery-art img {
+  width: 100%;
+  height: 100%;
 }
 
 .quote-section {
-  min-height: 48vh;
+  height: 832px;
   display: grid;
   place-items: center;
-  padding: clamp(82px, 14vw, 180px) 24px;
-  text-align: center;
-}
-
-.blush {
+  align-content: center;
   background: var(--blush);
+  text-align: center;
 }
 
 .script-quote {
   margin: 0;
-  font-family: "PP Playground", "Snell Roundhand", "Apple Chancery", "Brush Script MT", cursive;
-  font-size: clamp(3rem, 8vw, 8rem);
-  line-height: 0.95;
+  font-family: "PP Playground", "Snell Roundhand", cursive;
+  font-size: 102px;
+  font-weight: 300;
+  line-height: 0.96;
 }
 
 .quote-credit {
-  margin: 32px 0 0;
-  font-size: 0.86rem;
-  color: var(--muted);
+  margin: 45px 0 0;
+  font-size: 12px;
+  line-height: 1.25;
 }
 
-.intro {
+.intro-section {
+  height: 936px;
   display: grid;
   justify-items: center;
-  gap: 28px;
-  padding: clamp(76px, 12vw, 160px) 24px;
+  align-content: start;
   background: var(--cream);
   text-align: center;
 }
 
-.intro p {
-  max-width: 620px;
-  margin: 0;
-  font-size: clamp(1.15rem, 2vw, 1.75rem);
+.intro-copy {
+  width: 560px;
+  margin-top: 150px;
+  font-size: 23px;
+  line-height: 1.08;
 }
 
-.intro .accent,
-.contact-line {
+.intro-copy p {
+  margin: 0;
+}
+
+.intro-copy .welcome {
+  margin-bottom: 32px;
   color: var(--coral);
   font-weight: 700;
 }
 
-.slate-image {
-  width: min(72vw, 760px);
-  margin-top: 34px;
+.slate-art {
+  width: 944px;
+  height: 293px;
+  margin-top: 87px;
 }
 
-.artifact {
+.board-section {
+  height: 1893px;
   display: grid;
   justify-items: center;
-  padding: clamp(70px, 10vw, 150px) 24px;
+  align-content: start;
+  background: var(--pale);
 }
 
-.pale {
-  background: #e4e7d9;
+.board-art {
+  width: 680px;
+  height: 1348px;
+  margin-top: 422px;
 }
 
-.artifact img {
-  width: min(52vw, 520px);
-}
-
-.about {
+.brown-section {
+  height: 832px;
   display: grid;
-  grid-template-columns: minmax(280px, 0.95fr) minmax(300px, 1.05fr);
-  align-items: center;
-  gap: clamp(44px, 8vw, 120px);
-  padding: clamp(86px, 13vw, 180px) clamp(24px, 9vw, 140px);
+  place-items: center;
   background: var(--brown);
-  color: var(--white);
 }
 
-.about-image {
-  justify-self: center;
-  width: min(70vw, 520px);
+.brown-art {
+  width: 755px;
+  height: 493px;
 }
 
-.about-image.portrait {
-  width: min(72vw, 560px);
-}
-
-.about-image.portrait img {
-  aspect-ratio: 4 / 5;
-  object-fit: cover;
-}
-
-.about-text {
-  max-width: 520px;
-  font-size: clamp(1.12rem, 1.7vw, 1.55rem);
-}
-
-.about-text p {
-  margin: 0;
-}
-
-.about-text p + p {
-  margin-top: 1.2em;
-}
-
-.gallery {
-  position: relative;
+.mission-section {
+  height: 600px;
   display: grid;
-  grid-template-columns: minmax(220px, 0.45fr) minmax(320px, 0.75fr);
-  gap: clamp(24px, 5vw, 72px);
-  align-items: start;
-  padding: clamp(76px, 11vw, 150px) clamp(24px, 8vw, 120px);
-  background: linear-gradient(180deg, var(--coral) 0 23%, var(--cream) 23% 100%);
+  place-items: center;
+  background: var(--coral);
+  color: var(--white-soft);
+  text-align: center;
 }
 
-.gallery h2 {
+.mission-section p {
+  width: 625px;
+  margin: 0;
+  font-size: 22px;
+  line-height: 1.05;
+}
+
+.gallery-section {
+  position: relative;
+  height: 1862px;
+  background: #e3dcd4;
+  overflow: hidden;
+}
+
+.gallery-section h2 {
+  position: absolute;
+  left: 126px;
+  top: 206px;
+  z-index: 2;
   margin: 0;
   color: var(--coral);
-  font-family: "Bigilla", Didot, "Bodoni 72", Georgia, serif;
-  font-size: clamp(3.8rem, 9vw, 8.8rem);
+  font-family: "Bigilla", Didot, Georgia, serif;
+  font-size: 129px;
   font-weight: 400;
-  line-height: 0.9;
+  line-height: 0.82;
 }
 
-.gallery img {
-  width: min(62vw, 740px);
-  justify-self: center;
+.gallery-art {
+  position: absolute;
+  left: 107px;
+  top: 616px;
+  width: 997px;
+  height: 1107px;
 }
 
-.gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 1px;
-  background: var(--brown);
-}
-
-.gallery-grid figure {
-  min-height: 260px;
-  margin: 0;
-  background: var(--cream);
-}
-
-.gallery-grid img {
-  width: 100%;
-  height: 100%;
-  aspect-ratio: 1;
-  object-fit: cover;
-}
-
-.contact {
+.contact-section {
+  height: 585px;
   display: grid;
   justify-items: center;
-  gap: clamp(32px, 7vw, 88px);
-  padding: clamp(86px, 13vw, 180px) 24px;
+  align-content: start;
   background: var(--cream);
   text-align: center;
 }
 
 .contact-line {
-  max-width: 920px;
-  margin: 0;
-  font-size: clamp(1.3rem, 2.5vw, 2.5rem);
-  line-height: 1.18;
-}
-
-.email-link {
-  width: 100%;
-  padding: clamp(90px, 14vw, 180px) 24px;
-  background: var(--coral);
-  color: rgb(255 253 249 / 72%);
-  font-size: clamp(2rem, 6vw, 6.2rem);
-  font-weight: 200;
-  overflow-wrap: anywhere;
+  width: 838px;
+  margin: 156px 0 0;
+  color: var(--coral);
+  font-size: 23px;
+  font-weight: 700;
+  line-height: 1.13;
 }
 
 .signature {
-  margin: 0;
-  color: #1f1915;
-  font-family: "PP Playground", "Snell Roundhand", "Apple Chancery", "Brush Script MT", cursive;
-  font-size: clamp(3.8rem, 8vw, 8.5rem);
+  margin: 142px 0 0;
+  font-family: "PP Playground", "Snell Roundhand", cursive;
+  font-size: 76px;
+  font-weight: 300;
   line-height: 1;
 }
 
 .site-footer {
+  height: 247px;
   display: grid;
-  grid-template-columns: 1.3fr repeat(4, auto);
-  gap: clamp(20px, 6vw, 92px);
-  align-items: center;
-  padding: 42px clamp(22px, 7vw, 96px);
+  grid-template-columns: 1fr repeat(4, auto);
+  align-items: start;
+  gap: 104px;
+  padding: 96px 91px 0;
   background: var(--cream);
   color: var(--ink);
-  font-size: clamp(0.95rem, 1.3vw, 1.35rem);
+  font-size: 15px;
 }
 
 .site-footer p {
   margin: 0;
 }
 
-@media (max-width: 880px) {
-  .site-header {
-    min-height: 78px;
+@media (max-width: 600px) {
+  .hero {
+    height: 1000px;
   }
 
-  .menu-toggle {
-    display: flex;
+  .hero-nav a {
+    font-size: 16px;
   }
 
-  .site-nav {
-    position: fixed;
-    inset: 78px 0 0;
-    display: grid;
-    align-content: center;
-    justify-items: center;
-    gap: 34px;
-    background: var(--coral);
-    color: var(--white);
-    font-size: 2rem;
-    transform: translateX(-100%);
-    transition: transform 220ms ease;
+  .nav-blog {
+    left: 44px;
+    top: 29px;
   }
 
-  .menu-open .site-nav {
-    transform: translateX(0);
+  .nav-about {
+    left: auto;
+    right: 45px;
+    top: 29px;
   }
 
-  .hero,
-  .about,
-  .gallery {
-    grid-template-columns: 1fr;
+  .nav-gallery {
+    left: 44px;
+    top: 243px;
   }
 
-  .hero-copy {
-    min-height: 480px;
+  .nav-contact {
+    left: auto;
+    right: 43px;
+    top: 243px;
   }
 
-  .hero-copy h1 {
-    top: 35%;
+  h1 {
+    left: 101px;
+    top: 108px;
+    font-size: 105px;
+  }
+
+  h1 span {
+    margin-left: 12px;
+    font-size: 31px;
   }
 
   .hero-art {
-    width: min(82vw, 460px);
-    margin-bottom: 44px;
+    left: 39px;
+    top: 501px;
+    width: 345px;
+    height: 459px;
   }
 
-  .artifact img,
-  .gallery img {
-    width: min(86vw, 560px);
-  }
-
-  .gallery-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .gallery {
-    background: var(--cream);
-  }
-
-  .site-footer {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-@media (max-width: 520px) {
-  .site-header {
-    padding-inline: 18px;
-  }
-
-  .hero-copy {
-    min-height: 420px;
-    padding: 24px;
-  }
-
-  .top-right,
-  .bottom-right {
-    right: 30px;
-  }
-
-  .hero-copy h1 {
-    left: 28px;
-    font-size: 4.5rem;
+  .quote-section {
+    height: 420px;
   }
 
   .script-quote {
-    font-size: 3.7rem;
+    font-size: 55px;
+    line-height: 0.9;
   }
 
-  .email-link {
-    font-size: 2rem;
+  .quote-credit {
+    margin-top: 52px;
+    font-size: 10px;
   }
 
-  .gallery-grid figure {
-    min-height: 180px;
+  .intro-section {
+    height: 333px;
+  }
+
+  .intro-copy {
+    width: 300px;
+    margin-top: 53px;
+    font-size: 12px;
+    line-height: 1.08;
+  }
+
+  .intro-copy .welcome {
+    margin-bottom: 22px;
+  }
+
+  .slate-art {
+    width: 313px;
+    height: 129px;
+    margin-top: 36px;
+  }
+
+  .board-section {
+    height: 616px;
+  }
+
+  .board-art {
+    width: 243px;
+    height: 478px;
+    margin-top: 58px;
+  }
+
+  .brown-section {
+    height: 273px;
+  }
+
+  .brown-art {
+    width: 245px;
+    height: 197px;
+  }
+
+  .mission-section {
+    height: 220px;
+  }
+
+  .mission-section p {
+    width: 326px;
+    font-size: 12px;
+  }
+
+  .gallery-section {
+    height: 611px;
+  }
+
+  .gallery-section h2 {
+    left: 39px;
+    top: 77px;
+    font-size: 61px;
+    line-height: 0.8;
+  }
+
+  .gallery-art {
+    left: 37px;
+    top: 197px;
+    width: 323px;
+    height: 442px;
+  }
+
+  .contact-section {
+    height: 250px;
+  }
+
+  .contact-line {
+    width: 330px;
+    margin-top: 49px;
+    font-size: 12px;
+    line-height: 1.12;
+  }
+
+  .signature {
+    margin-top: 70px;
+    font-size: 42px;
+  }
+
+  .site-footer {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0;
+    padding: 0 29px;
+    font-size: 7px;
   }
 }
