@@ -1,3 +1,47 @@
+:root {
+  --coral: #de533c;
+  --pink: #fad4d6;
+  --cream: #e9e4d8;
+  --brown: #633b28;
+  --board-bg: #d8d8ca;
+  --ink: #6f5438;
+  --hero-text: #f8cbd0;
+  --white: #f8f1ec;
+  --scale: min(1px, calc(100vw / 1280));
+}
+
+@font-face {
+  font-family: "PP Neue Montreal";
+  src: url("assets/fonts/PPNeueMontreal-Book.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PP Neue Montreal";
+  src: url("assets/fonts/PPNeueMontreal-Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Bigilla";
+  src: url("assets/fonts/Bigilla.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PP Playground";
+  src: url("assets/fonts/PPPlayground-Light.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -8,120 +52,270 @@ html {
 
 body {
   margin: 0;
-  background: #e9e4d8;
+  overflow-x: hidden;
+  background: var(--cream);
+  color: #000;
+  font-family: "PP Neue Montreal", Avenir, "Helvetica Neue", Arial, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
 }
 
 .page {
-  width: 100%;
-  max-width: 1280px;
+  width: min(100vw, 1280px);
   margin: 0 auto;
-  background: #e9e4d8;
+  background: var(--cream);
 }
 
-.slice {
+.section-frame {
   position: relative;
   width: 100%;
-  margin: 0;
-  line-height: 0;
-}
-
-.slice img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-.hero-slice {
-  background: #de533c;
-}
-
-.quote-slice {
-  background: #fad4d6;
-}
-
-.intro-slice,
-.gallery-slice,
-.footer-slice {
-  background: #e9e4d8;
-}
-
-.board-slice {
-  background: #d8d8ca;
-}
-
-.brown-slice {
-  background: #633b28;
-}
-
-.vision-slice {
-  background: #df523d;
-}
-
-.hit {
-  position: absolute;
-  display: block;
   overflow: hidden;
-  color: transparent;
-  white-space: nowrap;
 }
 
-.hit:focus-visible {
-  outline: 2px solid #fff;
-  outline-offset: 6px;
+.hero {
+  height: calc(832 * var(--scale));
+  background: var(--coral);
+  color: var(--white);
 }
 
-.hit-blog {
-  left: 5%;
-  top: 7%;
-  width: 7%;
-  height: 5%;
+.hero-nav a {
+  position: absolute;
+  z-index: 2;
+  font-size: calc(29 * var(--scale));
+  line-height: 1;
 }
 
-.hit-about {
-  left: 40.5%;
-  top: 7%;
-  width: 10%;
-  height: 5%;
+.nav-blog {
+  left: calc(70 * var(--scale));
+  top: calc(69 * var(--scale));
 }
 
-.hit-gallery {
-  left: 5%;
-  top: 86%;
-  width: 9%;
-  height: 5%;
+.nav-about {
+  left: calc(534 * var(--scale));
+  top: calc(69 * var(--scale));
 }
 
-.hit-contact {
-  left: 39%;
-  top: 86%;
-  width: 10%;
-  height: 5%;
+.nav-gallery {
+  left: calc(70 * var(--scale));
+  top: calc(729 * var(--scale));
 }
 
-.foot-blog {
-  left: 39.5%;
-  top: 84%;
-  width: 7%;
-  height: 8%;
+.nav-contact {
+  left: calc(509 * var(--scale));
+  top: calc(729 * var(--scale));
 }
 
-.foot-about {
-  left: 52.5%;
-  top: 84%;
-  width: 9%;
-  height: 8%;
+h1 {
+  position: absolute;
+  left: calc(176 * var(--scale));
+  top: calc(303 * var(--scale));
+  z-index: 2;
+  margin: 0;
+  color: var(--hero-text);
+  font-family: "Bigilla", Didot, Georgia, serif;
+  font-size: calc(170 * var(--scale));
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 0.72;
 }
 
-.foot-gallery {
-  left: 67%;
-  top: 84%;
-  width: 10%;
-  height: 8%;
+h1 span {
+  display: block;
+  margin-left: calc(49 * var(--scale));
+  color: var(--hero-text);
+  font-family: "Bigilla", Didot, Georgia, serif;
+  font-size: calc(64 * var(--scale));
+  font-weight: 400;
+  line-height: 1;
 }
 
-.foot-contact {
-  left: 83%;
-  top: 84%;
-  width: 10%;
-  height: 8%;
+.hero-art {
+  position: absolute;
+  left: calc(678 * var(--scale));
+  top: calc(36 * var(--scale));
+  width: calc(570 * var(--scale));
+  height: calc(761 * var(--scale));
+}
+
+.quote {
+  height: calc(832 * var(--scale));
+  display: grid;
+  place-items: center;
+  align-content: center;
+  background: var(--pink);
+  color: var(--ink);
+  text-align: center;
+}
+
+.script-quote {
+  margin: calc(9 * var(--scale)) 0 0;
+  font-family: "PP Playground", "Snell Roundhand", cursive;
+  font-size: calc(111 * var(--scale));
+  font-weight: 300;
+  line-height: 0.95;
+}
+
+.quote-credit {
+  margin: calc(50 * var(--scale)) 0 0;
+  font-size: calc(19 * var(--scale));
+  line-height: 1.08;
+}
+
+.intro {
+  height: calc(1089 * var(--scale));
+  background: var(--cream);
+  text-align: center;
+}
+
+.intro-copy {
+  position: absolute;
+  left: 50%;
+  top: calc(143 * var(--scale));
+  width: calc(880 * var(--scale));
+  transform: translateX(-50%);
+  font-size: calc(36 * var(--scale));
+  line-height: 1.18;
+}
+
+.intro-copy p {
+  margin: 0;
+}
+
+.welcome {
+  margin-bottom: calc(42 * var(--scale)) !important;
+  color: var(--coral);
+  font-weight: 700;
+}
+
+.slate-art {
+  position: absolute;
+  left: calc(180 * var(--scale));
+  top: calc(484 * var(--scale));
+  width: calc(954 * var(--scale));
+  height: calc(428 * var(--scale));
+}
+
+.board {
+  height: calc(1740 * var(--scale));
+  background: var(--board-bg);
+}
+
+.board-art {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.brown {
+  height: calc(832 * var(--scale));
+  display: grid;
+  place-items: center;
+  background: var(--brown);
+}
+
+.brown-art {
+  width: calc(750 * var(--scale));
+  height: calc(631 * var(--scale));
+}
+
+.vision {
+  height: calc(600 * var(--scale));
+  display: grid;
+  place-items: center;
+  background: var(--coral);
+  color: var(--white);
+  text-align: center;
+}
+
+.vision p {
+  margin: 0;
+  font-size: calc(36 * var(--scale));
+  line-height: 1.2;
+}
+
+.gallery {
+  height: calc(1862 * var(--scale));
+  background: var(--cream);
+}
+
+.gallery h2 {
+  position: absolute;
+  left: calc(128 * var(--scale));
+  top: calc(159 * var(--scale));
+  z-index: 2;
+  margin: 0;
+  color: var(--coral);
+  font-family: "Bigilla", Didot, Georgia, serif;
+  font-size: calc(126 * var(--scale));
+  font-weight: 400;
+  line-height: 0.86;
+}
+
+.gallery-art {
+  position: absolute;
+  left: calc(107 * var(--scale));
+  top: calc(537 * var(--scale));
+  width: calc(997 * var(--scale));
+  height: calc(1107 * var(--scale));
+  object-fit: cover;
+}
+
+.footer {
+  height: calc(832 * var(--scale));
+  background: var(--cream);
+  color: var(--ink);
+  text-align: center;
+}
+
+.contact-line {
+  position: absolute;
+  left: 50%;
+  top: calc(124 * var(--scale));
+  width: calc(850 * var(--scale));
+  margin: 0;
+  transform: translateX(-50%);
+  color: var(--coral);
+  font-size: calc(36 * var(--scale));
+  font-weight: 700;
+  line-height: 1.18;
+}
+
+.signature {
+  position: absolute;
+  left: calc(393 * var(--scale));
+  top: calc(373 * var(--scale));
+  width: calc(482 * var(--scale));
+  height: calc(151 * var(--scale));
+}
+
+.footer-nav {
+  position: absolute;
+  left: calc(90 * var(--scale));
+  right: calc(90 * var(--scale));
+  top: calc(719 * var(--scale));
+  display: grid;
+  grid-template-columns: 1fr repeat(4, auto);
+  align-items: center;
+  gap: calc(98 * var(--scale));
+  color: var(--ink);
+  font-size: calc(29 * var(--scale));
+  text-align: left;
+}
+
+.footer-nav a {
+  text-align: center;
+}
+
+@media (max-width: 640px) {
+  .page {
+    width: 100vw;
+  }
 }

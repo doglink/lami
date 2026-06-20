@@ -8,48 +8,69 @@
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <main class="page" aria-label="Lami Art Studio home page">
-      <section id="home" class="slice hero-slice" aria-label="Lami Art Studio">
-        <img src="assets/sections/01-hero.png" alt="Lami Art Studio hero with artwork and navigation">
-        <nav class="hero-links" aria-label="Primary navigation">
-          <a class="hit hit-blog" href="#blog">Blog</a>
-          <a class="hit hit-about" href="#about">About</a>
-          <a class="hit hit-gallery" href="#gallery">Gallery</a>
-          <a class="hit hit-contact" href="#contact">Contact</a>
+    <main class="page">
+      <section id="home" class="hero section-frame">
+        <nav class="hero-nav" aria-label="Primary navigation">
+          <a class="nav-blog" href="#blog">Blog</a>
+          <a class="nav-about" href="#about">About</a>
+          <a class="nav-gallery" href="#gallery">Gallery</a>
+          <a class="nav-contact" href="#contact">Contact</a>
         </nav>
+        <h1>Lami <span>Art Studio</span></h1>
+        <img class="hero-art" src="assets/coded/hero-art.png" alt="Painted architectural artwork with domes and towers">
       </section>
 
-      <section id="blog" class="slice quote-slice" aria-label="Calligraphy quote">
-        <img src="assets/sections/02-hero-quote.png" alt="At first, practice on a wooden slate board">
+      <section id="blog" class="quote section-frame">
+        <p class="script-quote">...at first, practice on<br>a wooden slate board</p>
+        <p class="quote-credit">Ode to the Calligrapher by Ibn Bawwab<br>Translated by M. Zakariyah</p>
       </section>
 
-      <section class="slice intro-slice" aria-label="Welcome to Lami Art Studio">
-        <img src="assets/sections/03-intro-artwork.png" alt="Welcome text and Arabic calligraphy artwork">
+      <section class="intro section-frame">
+        <div class="intro-copy">
+          <p class="welcome">Welcome to Lami Art Studio.</p>
+          <p>
+            Our work here is about exploring West Africa Islamic Art,<br>
+            Islamic Arts, Arabic and English Calligraphy<br>
+            and how it all comes together.
+          </p>
+        </div>
+        <img class="slate-art" src="assets/coded/slate-calligraphy.png" alt="Arabic calligraphy on a textured board">
       </section>
 
-      <section class="slice board-slice" aria-label="Wooden board artwork">
-        <img src="assets/sections/04-full-width-artwork.png" alt="Decorated wooden board with Arabic calligraphy">
+      <section class="board section-frame" aria-label="Decorated wooden board artwork">
+        <img class="board-art" src="assets/coded/wooden-board-full.png" alt="Decorated wooden board with Arabic calligraphy">
       </section>
 
-      <section id="about" class="slice brown-slice" aria-label="Artwork on brown background">
-        <img src="assets/sections/05-artwork-on-brown.png" alt="Arabic calligraphy artwork on a brown background">
+      <section id="about" class="brown section-frame" aria-label="Arabic calligraphy artwork on brown">
+        <img class="brown-art" src="assets/coded/brown-calligraphy.png" alt="Arabic calligraphy artwork">
       </section>
 
-      <section class="slice vision-slice" aria-label="Studio vision">
-        <img src="assets/sections/06-vision.png" alt="Our vision statement">
+      <section class="vision section-frame">
+        <p>
+          Our vision is to craft stories and connections through<br>
+          Islamic arts. It is all about building connections with all<br>
+          these elements, expressed through our art pieces,<br>
+          worksheets and research.
+        </p>
       </section>
 
-      <section id="gallery" class="slice gallery-slice" aria-label="Visit the gallery">
-        <img src="assets/sections/07-visit-gallery.png" alt="Visit the gallery with horse artwork">
+      <section id="gallery" class="gallery section-frame">
+        <h2>Visit the<br>gallery</h2>
+        <img class="gallery-art" src="assets/prototype/horse-gallery.jpg" alt="Miniature painting of a black horse beneath flowering branches">
       </section>
 
-      <footer id="contact" class="slice footer-slice" aria-label="Contact and footer navigation">
-        <img src="assets/sections/08-footer.png" alt="Contact message, Halima Lami signature, and footer navigation">
-        <nav class="footer-links" aria-label="Footer navigation">
-          <a class="hit foot-blog" href="#blog">Blog</a>
-          <a class="hit foot-about" href="#about">About</a>
-          <a class="hit foot-gallery" href="#gallery">Gallery</a>
-          <a class="hit foot-contact" href="#contact">Contact</a>
+      <footer id="contact" class="footer section-frame">
+        <p class="contact-line">
+          Let’s tell a story together and let’s discover a world of<br>
+          Arabic calligraphy, West Africa and Islamic art.
+        </p>
+        <img class="signature" src="assets/coded/signature.png" alt="Halima Lami signature">
+        <nav class="footer-nav" aria-label="Footer navigation">
+          <span>Lami Art Studio &copy;2026</span>
+          <a href="#blog">Blog</a>
+          <a href="#about">About</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#contact">Contact</a>
         </nav>
       </footer>
     </main>
