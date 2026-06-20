@@ -389,7 +389,7 @@ h1 span {
 }
 
 .site-header {
-  height: 131px;
+  height: clamp(82px, 10.23vw, 131px);
   background: var(--pink);
   color: var(--footer-ink);
 }
@@ -400,24 +400,31 @@ h1 span {
   margin: 0 auto;
   display: flex;
   align-items: center;
-  padding: 0 50px;
+  gap: clamp(28px, 5vw, 64px);
+  padding: 0 clamp(22px, 3.9vw, 50px);
 }
 
 .site-logo {
+  flex: 0 0 auto;
   color: var(--coral);
   font-family: "Bigilla", Didot, Georgia, serif;
-  font-size: clamp(34px, 3.36vw, 43px);
+  font-size: clamp(27px, 3.36vw, 43px);
   line-height: 1;
+  white-space: nowrap;
 }
 
 .site-nav {
+  flex: 1 1 auto;
   margin-left: auto;
   display: flex;
   align-items: center;
-  gap: clamp(84px, 9.9vw, 127px);
+  justify-content: space-between;
+  min-width: 0;
+  max-width: min(55vw, 704px);
   color: var(--footer-ink);
-  font-size: clamp(24px, 2.34vw, 30px);
+  font-size: clamp(18px, 2.34vw, 30px);
   line-height: 1;
+  white-space: nowrap;
 }
 
 .site-nav .is-active {
@@ -429,7 +436,7 @@ h1 span {
 }
 
 .about-quote {
-  height: 600px;
+  height: 100svh;
   min-height: 600px;
   display: grid;
   place-items: center;
@@ -530,6 +537,48 @@ h1 span {
   }
 }
 
+@media (max-width: 1100px) and (min-width: 701px) {
+  .about-copy {
+    font-size: clamp(20px, 2.58vw, 33px);
+  }
+
+  .about-copy-top {
+    width: 50.8vw;
+    margin-left: 11.5vw;
+  }
+
+  .about-portrait {
+    width: 68.6vw;
+    margin-left: 21.8vw;
+  }
+
+  .about-copy-mid {
+    width: 55.5vw;
+    margin-left: 32.9vw;
+  }
+
+  .about-tiles {
+    width: 82.3vw;
+    margin-left: 7.65vw;
+  }
+
+  .about-copy-bottom {
+    width: 58.2vw;
+    margin-left: 7.65vw;
+  }
+
+  .about-gallery-callout {
+    width: 82.3vw;
+    margin-left: 7.65vw;
+    grid-template-columns: 25.8vw 48.75vw;
+    gap: 7.8vw;
+  }
+
+  .about-plate {
+    width: 48.75vw;
+  }
+}
+
 @media (max-width: 700px) {
   .site-header {
     height: auto;
@@ -549,6 +598,7 @@ h1 span {
 
   .site-nav {
     width: 100%;
+    max-width: none;
     margin: 0;
     justify-content: space-between;
     gap: 0;
