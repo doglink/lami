@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A simple GitHub Pages website.">
+    <title>Your Website</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Home">
+        <span class="brand-mark" aria-hidden="true">YW</span>
+        <span>Your Website</span>
+      </a>
+      <nav aria-label="Primary navigation">
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-media" aria-hidden="true">
+          <div class="sun"></div>
+          <div class="panel panel-one"></div>
+          <div class="panel panel-two"></div>
+          <div class="panel panel-three"></div>
+        </div>
+        <div class="hero-copy">
+          <p class="eyebrow">Live on GitHub Pages</p>
+          <h1 id="hero-title">Build something worth sharing.</h1>
+          <p>
+            Replace this text with your own story, project, portfolio, or idea.
+            This starter site is fast, responsive, and ready to publish.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#work">See the site</a>
+            <a class="button secondary" href="#contact">Get in touch</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="work" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Featured</p>
+          <h2>What this website can hold</h2>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card">
+            <span class="feature-number">01</span>
+            <h3>A portfolio</h3>
+            <p>Show your projects, writing, photos, resume, or anything else you want people to discover.</p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-number">02</span>
+            <h3>A project page</h3>
+            <p>Explain what you are building, why it matters, and where people can follow along.</p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-number">03</span>
+            <h3>A personal home</h3>
+            <p>Keep a simple page online with links, contact details, and a short introduction.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="about" class="split-section">
+        <div>
+          <p class="eyebrow">About</p>
+          <h2>Make it yours in a few edits.</h2>
+        </div>
+        <div class="about-copy">
+          <p>
+            Edit the words in <strong>index.html</strong>, update colors in
+            <strong>styles.css</strong>, and publish from GitHub Pages when you
+            are ready.
+          </p>
+          <p>
+            The layout already adapts for phones, tablets, and desktop screens.
+          </p>
+        </div>
+      </section>
+
+      <section id="contact" class="contact-band">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2>Ready to personalize it?</h2>
+        </div>
+        <a class="button primary" href="mailto:you@example.com">Email me</a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; <span id="year"></span> Your Website. Built for GitHub Pages.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
