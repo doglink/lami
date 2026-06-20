@@ -275,11 +275,15 @@ h1 span {
 }
 
 .vision-inner {
-  height: auto;
+  height: 100%;
+  display: grid;
+  place-items: center;
 }
 
 .vision p {
   margin: 0;
+  width: max-content;
+  max-width: min(100%, 900px);
   font-size: clamp(22px, 2.8vw, 36px);
   line-height: 1.2;
 }
@@ -296,8 +300,8 @@ h1 span {
   width: 100%;
   max-width: none;
   height: 100%;
-  object-fit: cover;
-  object-position: center top;
+  object-fit: contain;
+  object-position: center center;
 }
 
 .gallery-inner {
@@ -309,8 +313,8 @@ h1 span {
 
 .gallery h2 {
   position: absolute;
-  left: 10%;
-  top: 8.5%;
+  left: 20%;
+  top: 20%;
   margin: 0;
   color: var(--coral);
   font-family: "Bigilla", Didot, Georgia, serif;
@@ -348,8 +352,7 @@ h1 span {
 
 .signature {
   grid-row: 2;
-  width: min(37.7vw, 482px);
-  mix-blend-mode: multiply;
+  width: min(45.3vw, 580px);
 }
 
 .footer-nav {
@@ -448,8 +451,8 @@ h1 span {
   }
 
   .gallery h2 {
-    left: 9%;
-    top: 4.5%;
+    left: 20%;
+    top: 20%;
   }
 
   .footer-inner {
@@ -461,7 +464,7 @@ h1 span {
   }
 
   .signature {
-    width: min(58vw, 300px);
+    width: min(72vw, 320px);
   }
 
   .footer-nav {
