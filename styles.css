@@ -318,6 +318,10 @@ h1 span {
   line-height: 0.86;
 }
 
+.gallery h2 a {
+  pointer-events: auto;
+}
+
 .footer {
   display: grid;
   place-items: center;
