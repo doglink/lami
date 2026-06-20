@@ -3,97 +3,94 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="A simple GitHub Pages website.">
-    <title>Your Website</title>
+    <meta name="description" content="Lami Art Studio explores West African Islamic art, Arabic calligraphy, and English calligraphy.">
+    <title>Lami Art Studio</title>
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
     <header class="site-header">
-      <a class="brand" href="#top" aria-label="Home">
-        <span class="brand-mark" aria-hidden="true">YW</span>
-        <span>Your Website</span>
-      </a>
-      <nav aria-label="Primary navigation">
-        <a href="#work">Work</a>
+      <a class="logo" href="#home" aria-label="Lami Art Studio home">Lami Art Studio</a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav id="site-menu" class="site-nav" aria-label="Primary navigation">
+        <a href="#blog">Blog</a>
         <a href="#about">About</a>
+        <a href="#gallery">Gallery</a>
         <a href="#contact">Contact</a>
       </nav>
     </header>
 
-    <main id="top">
-      <section class="hero" aria-labelledby="hero-title">
-        <div class="hero-media" aria-hidden="true">
-          <div class="sun"></div>
-          <div class="panel panel-one"></div>
-          <div class="panel panel-two"></div>
-          <div class="panel panel-three"></div>
-        </div>
+    <main id="home">
+      <section class="hero">
         <div class="hero-copy">
-          <p class="eyebrow">Live on GitHub Pages</p>
-          <h1 id="hero-title">Build something worth sharing.</h1>
-          <p>
-            Replace this text with your own story, project, portfolio, or idea.
-            This starter site is fast, responsive, and ready to publish.
-          </p>
-          <div class="hero-actions">
-            <a class="button primary" href="#work">See the site</a>
-            <a class="button secondary" href="#contact">Get in touch</a>
-          </div>
+          <p class="nav-word top-left">Blog</p>
+          <p class="nav-word top-right">About</p>
+          <h1>Lami <span>Art Studio</span></h1>
+          <p class="nav-word bottom-left">Gallery</p>
+          <p class="nav-word bottom-right">Contact</p>
         </div>
+        <figure class="hero-art">
+          <img src="assets/hero-art.jpg" alt="Painted architectural artwork with domes and towers">
+        </figure>
       </section>
 
-      <section id="work" class="section">
-        <div class="section-heading">
-          <p class="eyebrow">Featured</p>
-          <h2>What this website can hold</h2>
-        </div>
-        <div class="feature-grid">
-          <article class="feature-card">
-            <span class="feature-number">01</span>
-            <h3>A portfolio</h3>
-            <p>Show your projects, writing, photos, resume, or anything else you want people to discover.</p>
-          </article>
-          <article class="feature-card">
-            <span class="feature-number">02</span>
-            <h3>A project page</h3>
-            <p>Explain what you are building, why it matters, and where people can follow along.</p>
-          </article>
-          <article class="feature-card">
-            <span class="feature-number">03</span>
-            <h3>A personal home</h3>
-            <p>Keep a simple page online with links, contact details, and a short introduction.</p>
-          </article>
-        </div>
+      <section id="blog" class="quote-section blush">
+        <p class="script-quote">...at first, practice on<br>a wooden slate board</p>
+        <p class="quote-credit">Ode to the Calligrapher by Ibn Bawwab<br>Translated by M. Zakariya</p>
       </section>
 
-      <section id="about" class="split-section">
-        <div>
-          <p class="eyebrow">About</p>
-          <h2>Make it yours in a few edits.</h2>
+      <section class="intro">
+        <p class="accent">Welcome to Lami Art Studio.</p>
+        <p>
+          Our work here is about exploring West Africa Islamic Art, Islamic Arts,
+          Arabic and English Calligraphy and how it all comes together.
+        </p>
+        <img class="slate-image" src="assets/calligraphy-slate.jpg" alt="Arabic calligraphy on a textured slate">
+      </section>
+
+      <section class="artifact pale">
+        <img src="assets/wooden-board.jpg" alt="Decorated wooden board with Arabic calligraphy">
+      </section>
+
+      <section id="about" class="about">
+        <div class="about-image">
+          <img src="assets/square-calligraphy.jpg" alt="Calligraphy artwork on a light square surface">
         </div>
-        <div class="about-copy">
+        <div class="about-text">
           <p>
-            Edit the words in <strong>index.html</strong>, update colors in
-            <strong>styles.css</strong>, and publish from GitHub Pages when you
-            are ready.
-          </p>
-          <p>
-            The layout already adapts for phones, tablets, and desktop screens.
+            Our vision is to craft stories and connections through Islamic arts.
+            It is all about building connections with all these elements,
+            expressed through art pieces, worksheets and research.
           </p>
         </div>
       </section>
 
-      <section id="contact" class="contact-band">
-        <div>
-          <p class="eyebrow">Contact</p>
-          <h2>Ready to personalize it?</h2>
+      <section id="gallery" class="gallery">
+        <div class="gallery-heading">
+          <h2>Visit the<br>gallery</h2>
         </div>
-        <a class="button primary" href="mailto:you@example.com">Email me</a>
+        <img src="assets/gallery-horse.jpg" alt="Miniature painting of a black horse beneath flowering branches">
+      </section>
+
+      <section id="contact" class="contact">
+        <p class="contact-line">
+          Let’s tell a story together and let’s discover a world of Arabic
+          calligraphy, West Africa and Islamic art.
+        </p>
+        <a class="email-link" href="mailto:halima@lamiartstudio.com">halima@lamiartstudio.com</a>
+        <p class="signature">Halima Lami</p>
       </section>
     </main>
 
     <footer class="site-footer">
-      <p>&copy; <span id="year"></span> Your Website. Built for GitHub Pages.</p>
+      <p>Lami Art Studio &copy;<span id="year"></span></p>
+      <a href="#blog">Blog</a>
+      <a href="#about">About</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
     </footer>
 
     <script src="script.js"></script>

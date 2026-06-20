@@ -1,12 +1,12 @@
-# Your Website
+# Lami Art Studio
 
-A simple static website ready for GitHub Pages.
+A static GitHub Pages website inspired by the Lami Art Studio reference PDF.
 
-## Customize
+## Edit
 
-- Edit `index.html` to change the text and links.
-- Edit `styles.css` to change colors, spacing, and layout.
-- Replace `you@example.com` with your email address.
+- Update the page content in `index.html`.
+- Adjust colors, spacing, and typography in `styles.css`.
+- Replace images in `assets/` with final artwork when ready.
 
 ## Publish on GitHub Pages
 
