@@ -7,6 +7,7 @@
   --ink: #000;
   --footer-ink: #6f5438;
   --design: min(100vw, 1280px);
+  --site-header-height: clamp(82px, 10.23vw, 131px);
 }
 
 @font-face {
@@ -389,7 +390,7 @@ h1 span {
 }
 
 .site-header {
-  height: clamp(82px, 10.23vw, 131px);
+  height: var(--site-header-height);
   background: var(--pink);
   color: var(--footer-ink);
 }
@@ -436,8 +437,8 @@ h1 span {
 }
 
 .about-quote {
-  height: 100svh;
-  min-height: 600px;
+  height: calc(100svh - var(--site-header-height));
+  min-height: 469px;
   display: grid;
   place-items: center;
   background: var(--pink);
@@ -482,6 +483,8 @@ h1 span {
   margin: 0;
   color: var(--pink);
   font-size: clamp(24px, 2.58vw, 33px);
+  font-weight: 400;
+  letter-spacing: 0.01em;
   line-height: 1.05;
 }
 
@@ -538,6 +541,10 @@ h1 span {
 }
 
 @media (max-width: 1100px) and (min-width: 701px) {
+  .about-story-inner {
+    padding: 11.7vw 0;
+  }
+
   .about-copy {
     font-size: clamp(20px, 2.58vw, 33px);
   }
@@ -549,26 +556,31 @@ h1 span {
 
   .about-portrait {
     width: 68.6vw;
+    margin-top: 11.3vw;
     margin-left: 21.8vw;
   }
 
   .about-copy-mid {
     width: 55.5vw;
+    margin-top: 12vw;
     margin-left: 32.9vw;
   }
 
   .about-tiles {
     width: 82.3vw;
+    margin-top: 13.35vw;
     margin-left: 7.65vw;
   }
 
   .about-copy-bottom {
     width: 58.2vw;
+    margin-top: 11.55vw;
     margin-left: 7.65vw;
   }
 
   .about-gallery-callout {
     width: 82.3vw;
+    margin-top: 11.7vw;
     margin-left: 7.65vw;
     grid-template-columns: 25.8vw 48.75vw;
     gap: 7.8vw;
@@ -608,7 +620,7 @@ h1 span {
   .about-quote {
     height: auto;
     min-height: 0;
-    padding: calc(100vw * 122 / 420) 8% calc(100vw * 94 / 420);
+    padding: calc(100vw * 88 / 420) 8% calc(100vw * 70 / 420);
   }
 
   .about-quote h1 {
@@ -617,7 +629,7 @@ h1 span {
   }
 
   .about-quote p {
-    margin-top: calc(100vw * 78 / 420);
+    margin-top: calc(100vw * 54 / 420);
     font-size: 15px;
   }
 
