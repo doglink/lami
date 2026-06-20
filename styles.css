@@ -75,6 +75,10 @@ img {
   max-width: 100%;
 }
 
+picture {
+  display: block;
+}
+
 .page {
   width: 100%;
 }
@@ -245,6 +249,15 @@ h1 span {
   width: min(74.5vw, 954px);
 }
 
+.slate-art img,
+.board-art img,
+.brown-art img,
+.gallery-art img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 .board {
   background: var(--board-bg);
 }
@@ -389,12 +402,12 @@ h1 span {
   }
 
   .hero-copy {
-    height: auto;
+    height: 100%;
     min-height: 0;
   }
 
   .hero-media {
-    height: auto;
+    height: 100%;
     min-height: 0;
     padding: 0 10vw 28px;
   }
@@ -446,15 +459,31 @@ h1 span {
   }
 
   .slate-art {
-    width: min(82vw, 420px);
+    width: min(74.5vw, 313px);
+  }
+
+  .board {
+    display: grid;
+    justify-items: center;
+    align-content: center;
+    min-height: 616px;
+  }
+
+  .board-art {
+    width: min(57.9vw, 243px);
   }
 
   .brown-art {
-    width: min(72vw, 420px);
+    width: min(58.4vw, 245px);
   }
 
   .gallery {
     min-height: auto;
+  }
+
+  .gallery-art {
+    width: min(76.9vw, 323px);
+    margin: 0 auto;
   }
 
   .gallery h2 {
