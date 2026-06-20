@@ -289,19 +289,15 @@ h1 span {
 }
 
 .gallery {
-  min-height: 100svh;
   background: var(--cream);
 }
 
 .gallery-art {
-  position: absolute;
-  inset: 0;
+  position: relative;
   z-index: 1;
   width: 100%;
   max-width: none;
-  height: 100%;
-  object-fit: cover;
-  object-position: center center;
+  height: auto;
 }
 
 .gallery-inner {
