@@ -405,9 +405,14 @@ h1 span {
     min-height: 0;
   }
 
+  .hero {
+    height: max(100svh, calc(100vw * 1000 / 420));
+    min-height: 100svh;
+  }
+
   .hero-inner {
     grid-template-columns: 1fr;
-    grid-template-rows: 64fr 36fr;
+    grid-template-rows: 1fr 1fr;
   }
 
   .hero-copy {
@@ -423,9 +428,8 @@ h1 span {
   }
 
   .hero-art {
-    width: min(82vw, 420px);
+    width: min(84vw, 420px);
     height: auto;
-    max-height: 34svh;
     max-width: 100%;
   }
 
