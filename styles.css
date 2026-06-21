@@ -555,6 +555,20 @@ h1 span {
   background: var(--brown);
 }
 
+.gallery-page .site-header {
+  background: var(--brown);
+  color: var(--pink);
+}
+
+.gallery-page .site-logo,
+.gallery-page .site-nav .is-active {
+  color: var(--coral);
+}
+
+.gallery-page .site-nav {
+  color: var(--pink);
+}
+
 .gallery-catalog {
   background: var(--brown);
   color: var(--pink);
