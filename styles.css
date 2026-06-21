@@ -738,7 +738,7 @@ h1 span {
     width: 100%;
     color: rgba(236, 232, 220, 0.72);
     font-family: "PP Playground", "Snell Roundhand", cursive;
-    font-size: clamp(70px, 23vw, 98px);
+    font-size: clamp(94px, 30vw, 105px);
     font-weight: 300;
     line-height: 0.72;
   }
@@ -746,8 +746,8 @@ h1 span {
   .mobile-menu-contact strong {
     position: relative;
     z-index: 1;
-    margin-top: calc(100vw * 43 / 420);
-    font-size: 25px;
+    margin-top: calc(100vw * 20 / 420);
+    font-size: 30px;
     font-weight: 400;
   }
 
