@@ -468,6 +468,7 @@ h1 span {
 
 .about-quote h1 span {
   color: inherit;
+  display: inline;
   font-family: inherit;
   font-size: inherit;
   font-weight: inherit;
