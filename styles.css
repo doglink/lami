@@ -668,6 +668,27 @@ h1 span {
   text-rendering: optimizeLegibility;
 }
 
+.contact-quote h1 span {
+  color: inherit;
+  display: inline;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.contact-quote-line {
+  display: block !important;
+}
+
+.contact-quote-line-second {
+  transform: translateX(-0.18em);
+}
+
+.contact-quote-emphasis {
+  display: inline !important;
+  font-weight: 300;
+}
+
 .contact-quote p {
   margin: clamp(44px, 5vw, 64px) 0 0;
   color: var(--brown);
@@ -1099,8 +1120,8 @@ h1 span {
     line-height: 0.96;
   }
 
-  .contact-quote h1 br {
-    display: none;
+  .contact-quote-line-second {
+    transform: none;
   }
 
   .contact-quote p {
