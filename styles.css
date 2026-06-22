@@ -603,7 +603,7 @@ h1 span {
 
 .gallery-quote-translation {
   display: block;
-  margin-top: clamp(38px, 4.84vw, 62px);
+  margin-top: clamp(52px, 6.25vw, 80px);
   color: var(--footer-ink);
   font-family: Arial, "PP Neue Montreal", Avenir, "Helvetica Neue", sans-serif;
   font-size: clamp(15px, 1.56vw, 20px);
