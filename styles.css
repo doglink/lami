@@ -1086,7 +1086,7 @@ h1 span {
   }
 
   .hero-nav a {
-    font-size: clamp(14px, 3.81vw, 18px);
+    font-size: clamp(18px, 5.24vw, 22px);
   }
 
   .nav-blog {
