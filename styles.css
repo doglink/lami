@@ -565,18 +565,8 @@ h1 span {
   background: var(--brown);
 }
 
-.gallery-page .site-header {
-  background: var(--brown);
-  color: var(--pink);
-}
-
-.gallery-page .site-logo,
-.gallery-page .site-nav .is-active {
-  color: var(--coral);
-}
-
 .gallery-page .site-nav {
-  color: var(--pink);
+  font-size: clamp(18px, 1.56vw, 20px);
 }
 
 .gallery-quote {
