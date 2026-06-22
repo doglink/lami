@@ -595,7 +595,7 @@ h1 span {
   margin: 0;
   color: var(--footer-ink);
   font-family: "QCF Page 590", serif;
-  font-size: clamp(86px, 11.25vw, 144px);
+  font-size: clamp(86px, 9.37vw, 120px);
   font-weight: 400;
   line-height: 1;
   white-space: nowrap;
