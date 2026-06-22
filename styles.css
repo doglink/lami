@@ -569,6 +569,37 @@ h1 span {
   color: var(--pink);
 }
 
+.gallery-quote {
+  height: calc(100svh - var(--site-header-height));
+  min-height: 469px;
+  display: grid;
+  place-items: center;
+  background: var(--pink);
+  color: var(--footer-ink);
+  text-align: center;
+}
+
+.gallery-quote-inner {
+  height: auto;
+}
+
+.gallery-quote p {
+  margin: 0;
+  color: var(--footer-ink);
+  font-family: "PP Playground", "Snell Roundhand", cursive;
+  font-size: clamp(58px, 7.82vw, 100px);
+  font-weight: 300;
+  line-height: 0.96;
+}
+
+.gallery-quote span {
+  display: block;
+  margin-top: clamp(42px, 5.55vw, 71px);
+  color: var(--footer-ink);
+  font-size: clamp(15px, 1.56vw, 20px);
+  line-height: 1;
+}
+
 .gallery-catalog {
   background: var(--brown);
   color: var(--pink);
@@ -945,6 +976,22 @@ h1 span {
 
   .gallery-page .site-header {
     color: var(--pink);
+  }
+
+  .gallery-quote {
+    height: auto;
+    min-height: 0;
+    padding: calc(100vw * 169 / 420) calc(100vw * 32 / 420) calc(100vw * 90 / 420);
+  }
+
+  .gallery-quote p {
+    font-size: clamp(42px, 11.9vw, 50px);
+    line-height: 0.98;
+  }
+
+  .gallery-quote span {
+    margin-top: calc(100vw * 62 / 420);
+    font-size: 15px;
   }
 
   .gallery-catalog-inner {
