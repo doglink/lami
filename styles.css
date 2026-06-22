@@ -693,7 +693,7 @@ h1 span {
 .contact-quote h1 .contact-ellipsis {
   display: inline !important;
   font-weight: inherit;
-  letter-spacing: -0.16em;
+  letter-spacing: -0.02em;
   margin-right: 0.08em;
 }
 
