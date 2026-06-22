@@ -419,7 +419,7 @@ h1 span {
   flex: 0 0 auto;
   color: var(--coral);
   font-family: "Bigilla", Didot, Georgia, serif;
-  font-size: clamp(27px, 3.36vw, 43px);
+  font-size: clamp(27px, 2.73vw, 35px);
   line-height: 1;
   white-space: nowrap;
 }
@@ -772,7 +772,7 @@ h1 span {
   }
 
   .site-logo {
-    font-size: 34px;
+    font-size: min(6.43vw, 27px);
   }
 
   .site-nav {
