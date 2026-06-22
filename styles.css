@@ -1142,8 +1142,8 @@ h1 span {
 
   .contact-quote h1 {
     width: 100%;
-    font-size: clamp(39px, 10.47vw, 44px);
-    line-height: 1.02;
+    font-size: clamp(40px, 10.47vw, 44px);
+    line-height: 1;
   }
 
   .contact-quote-desktop {
@@ -1151,15 +1151,13 @@ h1 span {
   }
 
   .contact-quote-mobile {
-    display: block !important;
+    display: grid !important;
+    gap: calc(100vw * 11 / 420);
   }
 
   .contact-quote-line {
     transform: none;
-  }
-
-  .contact-quote-line:nth-child(2) {
-    margin-top: calc(100vw * 5 / 420);
+    white-space: nowrap;
   }
 
   .contact-quote p {
