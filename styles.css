@@ -690,7 +690,7 @@ h1 span {
 }
 
 .contact-quote-line-second {
-  transform: translateX(-0.18em);
+  transform: translateX(0.2em);
 }
 
 .contact-quote h1 .contact-quote-emphasis {
@@ -703,6 +703,15 @@ h1 span {
   font-weight: inherit;
   letter-spacing: -0.02em;
   margin-right: 0.08em;
+}
+
+.contact-quote h1 .contact-ellipsis-tight {
+  margin-right: -0.02em;
+}
+
+.contact-quote h1 .contact-tight-space {
+  display: inline !important;
+  font-weight: inherit;
 }
 
 .contact-quote p {
