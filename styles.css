@@ -225,7 +225,14 @@ h1 span {
   font-family: "PP Playground", "Snell Roundhand", cursive;
   font-size: clamp(54px, 8.7vw, 111px);
   font-weight: 100;
+  font-kerning: normal;
+  font-variant-ligatures: common-ligatures discretionary-ligatures contextual;
+  font-feature-settings:
+    "kern" 1, "liga" 1, "dlig" 1, "calt" 1, "swsh" 1,
+    "ss01" 1, "ss02" 1, "ss03" 1, "ss04" 1, "ss05" 1, "ss06" 1,
+    "ss07" 1, "ss08" 1, "ss09" 1, "ss10" 1, "ss11" 1, "ss12" 1;
   line-height: 0.95;
+  text-rendering: optimizeLegibility;
 }
 
 .quote-credit {
@@ -481,7 +488,14 @@ h1 span {
   font-family: "PP Playground", "Snell Roundhand", cursive;
   font-size: clamp(48px, 5.45vw, 70px);
   font-weight: 100;
+  font-kerning: normal;
+  font-variant-ligatures: common-ligatures discretionary-ligatures contextual;
+  font-feature-settings:
+    "kern" 1, "liga" 1, "dlig" 1, "calt" 1, "swsh" 1,
+    "ss01" 1, "ss02" 1, "ss03" 1, "ss04" 1, "ss05" 1, "ss06" 1,
+    "ss07" 1, "ss08" 1, "ss09" 1, "ss10" 1, "ss11" 1, "ss12" 1;
   line-height: 1.02;
+  text-rendering: optimizeLegibility;
 }
 
 .about-quote h1 span {
@@ -643,8 +657,15 @@ h1 span {
   font-family: "PP Playground", "Snell Roundhand", cursive;
   font-size: clamp(50px, 5.86vw, 75px);
   font-weight: 100;
+  font-kerning: normal;
+  font-variant-ligatures: common-ligatures discretionary-ligatures contextual;
+  font-feature-settings:
+    "kern" 1, "liga" 1, "dlig" 1, "calt" 1, "swsh" 1,
+    "ss01" 1, "ss02" 1, "ss03" 1, "ss04" 1, "ss05" 1, "ss06" 1,
+    "ss07" 1, "ss08" 1, "ss09" 1, "ss10" 1, "ss11" 1, "ss12" 1;
   line-height: 0.98;
   text-align: center;
+  text-rendering: optimizeLegibility;
 }
 
 .contact-quote p {
