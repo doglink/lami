@@ -45,7 +45,7 @@
 @font-face {
   font-family: "PP Playground";
   src: url("assets/fonts/PPPlayground-Light.otf") format("opentype");
-  font-weight: 300;
+  font-weight: 100 300;
   font-style: normal;
   font-display: swap;
 }
@@ -216,7 +216,7 @@ h1 span {
   color: var(--brown);
   font-family: "PP Playground", "Snell Roundhand", cursive;
   font-size: clamp(54px, 8.7vw, 111px);
-  font-weight: 300;
+  font-weight: 100;
   line-height: 0.95;
 }
 
@@ -472,7 +472,7 @@ h1 span {
   color: var(--brown);
   font-family: "PP Playground", "Snell Roundhand", cursive;
   font-size: clamp(48px, 5.45vw, 70px);
-  font-weight: 300;
+  font-weight: 100;
   line-height: 1.02;
 }
 
@@ -634,7 +634,7 @@ h1 span {
   color: var(--brown);
   font-family: "PP Playground", "Snell Roundhand", cursive;
   font-size: clamp(50px, 5.86vw, 75px);
-  font-weight: 300;
+  font-weight: 100;
   line-height: 0.98;
   text-align: center;
 }
