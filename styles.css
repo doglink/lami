@@ -1137,7 +1137,7 @@ h1 span {
   .contact-quote {
     height: auto;
     min-height: 0;
-    padding: calc(100vw * 205 / 420) calc(100vw * 24 / 420) calc(100vw * 70 / 420);
+    padding: calc(100vw * 170 / 420) calc(100vw * 24 / 420) calc(100vw * 70 / 420);
   }
 
   .contact-quote h1 {
@@ -1163,8 +1163,8 @@ h1 span {
   }
 
   .contact-quote p {
-    margin-top: calc(100vw * 91 / 420);
-    font-size: 20px;
+    margin-top: calc(100vw * 60 / 420);
+    font-size: 15px;
   }
 
   .contact-page .site-header-inner,
