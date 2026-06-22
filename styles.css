@@ -1142,7 +1142,7 @@ h1 span {
 
   .contact-quote h1 {
     width: 100%;
-    font-size: clamp(40px, 10.47vw, 44px);
+    font-size: xx-large;
     line-height: 1;
   }
 
