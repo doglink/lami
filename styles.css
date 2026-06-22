@@ -565,7 +565,7 @@ h1 span {
   background: var(--brown);
 }
 
-.gallery-page .site-nav {
+.inner-page .site-nav {
   font-size: clamp(18px, 1.56vw, 20px);
 }
 
@@ -1217,10 +1217,21 @@ h1 span {
   color: var(--coral);
 }
 
+.simple-page.inner-page {
+  display: block;
+  background: var(--pink);
+}
+
 .simple-page-inner {
   display: grid;
   justify-items: center;
   gap: 32px;
+}
+
+.inner-page.simple-page .simple-page-inner {
+  min-height: calc(100svh - var(--site-header-height));
+  place-items: center;
+  background: var(--pink);
 }
 
 .simple-page h1 {
