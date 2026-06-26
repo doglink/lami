@@ -5,7 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Lami Art Studio explores West African Islamic art, Arabic calligraphy, and English calligraphy.">
     <title>Lami Art Studio</title>
-    <link rel="stylesheet" href="styles.css?v=mobile-hero-links-large">
+    <link rel="preload" href="assets/fonts/Bigilla.otf" as="font" type="font/otf" crossorigin>
+    <link rel="preload" href="assets/fonts/PPNeueMontreal-Book.otf" as="font" type="font/otf" crossorigin>
+    <link rel="preload" href="assets/fonts/PPPlayground-Medium.otf" as="font" type="font/otf" crossorigin>
+    <link rel="preload" href="assets/coded/hero-art.avif" as="image" type="image/avif" imagesrcset="assets/coded/hero-art.avif 1600w, assets/coded/hero-art-2x.avif 2800w" imagesizes="(max-width: 700px) 84vw, 50vw">
+    <link rel="stylesheet" href="styles.css?v=first-load-polish">
   </head>
   <body>
     <main class="page">
@@ -26,6 +30,7 @@
               src="assets/coded/hero-art.avif"
               srcset="assets/coded/hero-art.avif 1600w, assets/coded/hero-art-2x.avif 2800w"
               sizes="(max-width: 700px) 84vw, 50vw"
+              fetchpriority="high"
               alt="Painted architectural artwork with domes and towers">
           </div>
         </div>
