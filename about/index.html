@@ -1,15 +1,17 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <base href="../">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Contact | Lami Art Studio</title>
+    <meta name="description" content="Learn about Halima Bashir and the materials, patterns, and calligraphy behind Lami Art Studio.">
+    <title>About | Lami Art Studio</title>
     <link rel="preload" href="assets/fonts/Bigilla.otf" as="font" type="font/otf" crossorigin>
     <link rel="preload" href="assets/fonts/PPNeueMontreal-Book.otf" as="font" type="font/otf" crossorigin>
     <link rel="preload" href="assets/fonts/PPPlayground-Thin.otf" as="font" type="font/otf" crossorigin>
     <link rel="stylesheet" href="styles.css?v=first-load-polish">
   </head>
-  <body class="inner-page contact-page">
+  <body class="about-page inner-page">
     <header class="site-header">
       <div class="site-header-inner">
         <a class="site-logo" href="./">Lami Art Studio</a>
@@ -20,9 +22,9 @@
         </button>
         <nav class="site-nav" aria-label="Primary navigation">
           <a href="https://halimalami.substack.com/" target="_blank" rel="noopener noreferrer">Blog</a>
-          <a href="about/">About</a>
+          <a class="is-active" href="about/">About</a>
           <a href="gallery/">Gallery</a>
-          <a class="is-active" href="contact/">Contact</a>
+          <a href="contact/">Contact</a>
         </nav>
       </div>
     </header>
@@ -37,39 +39,79 @@
       </div>
       <nav class="mobile-menu-nav" aria-label="Mobile navigation">
         <a href="https://halimalami.substack.com/" target="_blank" rel="noopener noreferrer">Blog</a>
-        <a href="about/">About</a>
+        <a class="is-active" href="about/">About</a>
         <a href="gallery/">Gallery</a>
       </nav>
-      <a class="mobile-menu-contact is-active" href="contact/">
+      <a class="mobile-menu-contact" href="contact/">
         <span>Write an<br>email to me</span>
         <strong>Stay connected</strong>
       </a>
     </div>
 
     <main>
-      <section class="contact-quote section-frame" aria-labelledby="contact-quote">
-        <div class="contact-quote-inner design-inner">
-          <h1 id="contact-quote">
-            <span class="contact-quote-desktop">
-              <span class="contact-quote-line contact-quote-line-first">Beauty is qualitative<span class="contact-ellipsis contact-ellipsis-tight">...</span><span class="contact-tight-space"> you</span> can&rsquo;t measure the</span>
-              <span class="contact-quote-line contact-quote-line-second">beauty of a perfectly <span class="contact-quote-emphasis">calligraphed</span> work of art<span class="contact-ellipsis">...</span></span>
-            </span>
-            <span class="contact-quote-mobile">
-              <span class="contact-quote-line">Beauty is qualitative<span class="contact-ellipsis">...</span></span>
-              <span class="contact-quote-line">you can&rsquo;t measure the beauty</span>
-              <span class="contact-quote-line">of a perfectly <span class="contact-quote-emphasis">calligraphed</span></span>
-              <span class="contact-quote-line">work of art<span class="contact-ellipsis">...</span></span>
-            </span>
+      <section class="about-quote section-frame" aria-labelledby="about-quote">
+        <div class="about-quote-inner design-inner">
+          <h1 id="about-quote">
+            <span>give me the stories you</span><br class="mobile-break">
+            <span>tell your childre<span class="script-terminal">n</span></span><br class="desktop-break">
+            <span class="quote-line-third">and <span class="script-plain-i">I</span>&rsquo;ll give you</span><br class="mobile-break">
+            <span>your culture.</span>
           </h1>
-          <p>Sheikh Hamza Yusuf</p>
+          <p>Plato</p>
         </div>
       </section>
 
-      <section class="contact-email section-frame" aria-label="Email Halima">
-        <a href="mailto:halima@lamiartstudio.com">halima@lamiartstudio.com</a>
+      <section class="about-story section-frame">
+        <div class="about-story-inner">
+          <p class="about-copy about-copy-top">
+            Working predominantly with wood and clay,<br>
+            Halima has used these materials to interpret<br>
+            the language of patterns and calligraphy<br>
+            found in West African Islamic art and craft.
+          </p>
+
+          <img
+            class="about-portrait"
+            src="assets/about/halima-portrait.avif"
+            srcset="assets/about/halima-portrait.avif 896w, assets/about/halima-portrait-2x.avif 1792w"
+            sizes="(max-width: 700px) 84vw, 68.6vw"
+            alt="Halima Bashir seated beside a studio table" loading="lazy" decoding="async">
+
+          <p class="about-copy about-copy-mid">
+            Halima Bashir was born and raised in Nigeria,<br>
+            and draws influence from the Arabic calligraphy<br>
+            script predominant in West Africa called Sudani<br>
+            and patterns from craftwork in northern Nigeria.
+          </p>
+
+          <img
+            class="about-tiles"
+            src="assets/about/tiles.avif"
+            srcset="assets/about/tiles.avif 1054w, assets/about/tiles-2x.avif 2108w"
+            sizes="(max-width: 700px) 84vw, 82.3vw"
+            alt="Geometric ceramic tile pattern in brown, cream, black, and white" loading="lazy" decoding="async">
+
+          <p class="about-copy about-copy-bottom">
+            Having studied architecture in Nigeria and North<br>
+            Cyprus, she has taken her interest in traditional<br>
+            architecture into her art and craft work. Halima is<br>
+            currently working towards her ijaza (certificate) in<br>
+            Arabic calligraphy with a master calligrapher.
+          </p>
+
+          <div class="about-gallery-callout">
+            <a class="about-gallery-link" href="gallery/">Visit the<br>gallery</a>
+            <img
+              class="about-plate"
+              src="assets/about/calligraphy-plate.avif"
+              srcset="assets/about/calligraphy-plate.avif 624w, assets/about/calligraphy-plate-2x.avif 1248w"
+              sizes="(max-width: 700px) 84vw, 48.75vw"
+              alt="Round ceramic plate with Arabic calligraphy around the rim" loading="lazy" decoding="async">
+          </div>
+        </div>
       </section>
 
-      <footer id="contact-footer" class="footer section-frame">
+      <footer id="contact" class="footer section-frame">
         <div class="footer-inner design-inner">
           <p class="contact-line">
             Let&rsquo;s tell a story together and let&rsquo;s discover a world of<br>

@@ -88,6 +88,7 @@
 
 html {
   scroll-behavior: smooth;
+  background: var(--pink);
 }
 
 body {
@@ -96,6 +97,70 @@ body {
   background: var(--cream);
   color: var(--ink);
   font-family: "PP Neue Montreal", Avenir, "Helvetica Neue", Arial, sans-serif;
+  animation: page-fade-in 260ms ease-out both;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  pointer-events: none;
+  background: var(--pink);
+  opacity: 0;
+  animation: page-wash-out 260ms ease-out both;
+}
+
+body.page-is-leaving {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 220ms ease-in;
+}
+
+body.page-is-leaving::before {
+  opacity: 0;
+  animation: none;
+}
+
+@keyframes page-fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes page-wash-out {
+  from {
+    opacity: 0.42;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body {
+    animation: none;
+  }
+
+  body::before {
+    opacity: 0;
+    animation: none;
+  }
+
+  body.page-is-leaving {
+    opacity: 1;
+    transition: none;
+  }
+
+  body.page-is-leaving::before {
+    opacity: 0;
+    transition: none;
+  }
 }
 
 a {
@@ -691,6 +756,7 @@ h1 span {
   height: auto;
   display: grid;
   justify-items: center;
+  transform: translateY(-4vh);
 }
 
 .contact-quote h1 {
@@ -1273,6 +1339,10 @@ h1 span {
     padding: calc(100vw * 170 / 420) calc(100vw * 24 / 420) calc(100vw * 90 / 420);
   }
 
+  .contact-quote-inner {
+    transform: none;
+  }
+
   .contact-quote h1 {
     width: 100%;
     font-size: xx-large;
@@ -1314,7 +1384,7 @@ h1 span {
   }
 
   .policies-inner {
-    padding: 40px calc(100vw * 32 / 420) 64px;
+    padding: calc(100vw * 126 / 420) calc(100vw * 32 / 420) 64px;
   }
 
   .policy-section {
