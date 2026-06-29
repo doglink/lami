@@ -980,6 +980,11 @@ h1 span {
   background: rgba(250, 212, 214, 0.08);
 }
 
+.protected-print-image {
+  -webkit-touch-callout: none;
+  user-select: none;
+}
+
 .artwork-card figcaption {
   margin-top: clamp(15px, 1.72vw, 22px);
   display: grid;

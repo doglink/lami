@@ -2,6 +2,16 @@ document.querySelectorAll(".current-year").forEach((year) => {
   year.textContent = new Date().getFullYear();
 });
 
+document.querySelectorAll(".protected-print-image").forEach((image) => {
+  image.addEventListener("contextmenu", (event) => {
+    event.preventDefault();
+  });
+
+  image.addEventListener("dragstart", (event) => {
+    event.preventDefault();
+  });
+});
+
 const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
 if (!prefersReducedMotion) {
